@@ -2,6 +2,9 @@ L.Control.Social = L.Control.extend({
   options: {
     position: 'bottomleft',
     inn: "",
+	title: "Расходы школ Москвы",
+	description: "",
+	image: "project-cover2.png",
     links: [
       ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=http://schools.mithron.me/"],     
       ['vk', "VK", "https://vk.com/share.php?url=http://schools.mithron.me/"]
