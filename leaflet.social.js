@@ -1,7 +1,7 @@
 L.Control.Social = L.Control.extend({ 
   options: {
     position: 'bottomleft',
-    url: "http://schools.mithron.me",
+    url: "http://schools.mithron.me/",
     links: [
       ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=_url_"],     
       ['vkontakte', "VK", "http://vk.com/share.php?url=_url_"]
