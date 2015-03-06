@@ -1,10 +1,10 @@
 L.Control.Social = L.Control.extend({ 
   options: {
     position: 'bottomleft',
-    url: "http://schools.mithron.me/",
+    inn: "",
     links: [
-      ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=_url_"],     
-      ['vkontakte', "VK", "http://vk.com/share.php?url=_url_"]
+      ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=http://schools.mithron.me/"],     
+      ['vkontakte', "VK", "https://vk.com/share.php?url=http://schools.mithron.me/"]
     ]
   },
 
@@ -14,7 +14,7 @@ L.Control.Social = L.Control.extend({
 
   share: function () {
     var url = this.link;
-    url = url.replace(/_url_/, encodeURIComponent(this.self.options.text));   
+    url = url + this.self.options.inn;   
     window.open(url);
   },
 
