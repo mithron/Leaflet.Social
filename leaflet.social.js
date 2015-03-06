@@ -4,7 +4,7 @@ L.Control.Social = L.Control.extend({
     inn: "",
     links: [
       ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=http://schools.mithron.me/"],     
-      ['vkontakte', "VK", "https://vk.com/share.php?url=http://schools.mithron.me/"]
+      ['vk', "VK", "https://vk.com/share.php?url=http://schools.mithron.me/"]
     ]
   },
 
