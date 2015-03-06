@@ -1,12 +1,10 @@
-L.Control.Social = L.Control.extend({
-  includes: L.Mixin.Events,
+L.Control.Social = L.Control.extend({ 
   options: {
     position: 'bottomleft',
-    default_text: "What a nice map",
+    url: "http://schools.mithron.me",
     links: [
-      ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=_url_&t=_text_"],
-      ['twitter', "Twitter", "http://twitter.com/intent/tweet?text=_text_&url=_url_"],
-      ['google-plus', "Google Plus", "https://plus.google.com/share?url=_url_"]
+      ['facebook', "Facebook", "https://www.facebook.com/sharer.php?u=_url_"],     
+      ['vkontakte', "VK", "http://vk.com/share.php?url=_url_"]
     ]
   },
 
@@ -16,8 +14,7 @@ L.Control.Social = L.Control.extend({
 
   share: function () {
     var url = this.link;
-    url = url.replace(/_text_/, encodeURIComponent(this.self.options.default_text));
-    url = url.replace(/_url_/, encodeURIComponent(location.href));
+    url = url.replace(/_url_/, encodeURIComponent(this.self.options.text));   
     window.open(url);
   },
 
